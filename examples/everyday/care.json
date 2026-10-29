@@ -1,0 +1,218 @@
+{
+  "as_of": "2026-10-03",
+  "days_ahead": 3,
+  "rows": [
+    {
+      "date": "2026-10-03",
+      "task_id": "bao-am",
+      "pet": "包子",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "done",
+      "reports": [
+        {
+          "id": "C2",
+          "task_id": "bao-am",
+          "date": "2026-10-03",
+          "status": "done",
+          "actor": "照顾者A",
+          "source": "C2 合成照顾留言"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "task_id": "mochi-am",
+      "pet": "年糕",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "done",
+      "reports": [
+        {
+          "id": "C1",
+          "task_id": "mochi-am",
+          "date": "2026-10-03",
+          "status": "done",
+          "actor": "照顾者A",
+          "source": "C1 合成照顾留言"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "task_id": "bao-pm",
+      "pet": "包子",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "not_recorded",
+      "reports": []
+    },
+    {
+      "date": "2026-10-03",
+      "task_id": "mochi-pm",
+      "pet": "年糕",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "conflict",
+      "reports": [
+        {
+          "id": "C3",
+          "task_id": "mochi-pm",
+          "date": "2026-10-03",
+          "status": "done",
+          "actor": "照顾者A",
+          "source": "C3 合成照顾留言"
+        },
+        {
+          "id": "C4",
+          "task_id": "mochi-pm",
+          "date": "2026-10-03",
+          "status": "skipped",
+          "actor": "照顾者B",
+          "source": "C4 合成冲突留言，待核对"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "task_id": "bao-am",
+      "pet": "包子",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-04",
+      "task_id": "mochi-am",
+      "pet": "年糕",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-04",
+      "task_id": "bao-pm",
+      "pet": "包子",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-04",
+      "task_id": "mochi-pm",
+      "pet": "年糕",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-05",
+      "task_id": "bao-am",
+      "pet": "包子",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-05",
+      "task_id": "mochi-am",
+      "pet": "年糕",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-05",
+      "task_id": "bao-pm",
+      "pet": "包子",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-05",
+      "task_id": "mochi-pm",
+      "pet": "年糕",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-06",
+      "task_id": "bao-am",
+      "pet": "包子",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-06",
+      "task_id": "mochi-am",
+      "pet": "年糕",
+      "time": "08:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-06",
+      "task_id": "bao-pm",
+      "pet": "包子",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    },
+    {
+      "date": "2026-10-06",
+      "task_id": "mochi-pm",
+      "pet": "年糕",
+      "time": "20:00",
+      "title": "分开喂食并检查食盆",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分",
+      "state": "planned",
+      "reports": []
+    }
+  ],
+  "basis": "Check-ins are caregiver reports, not sensor proof. No log does not mean not fed. Marking done does not deduct inventory or trigger reminders."
+}

@@ -2,6 +2,8 @@
 
 All examples are synthetic. Monetary amounts use decimal-compatible numbers or numeric strings; one file uses one currency. Python's `Decimal` handles calculations.
 
+For optional batch counts, caregiver tasks, observations and safe append updates, see [everyday-workflows.md](everyday-workflows.md). Existing base records continue to work without those fields.
+
 | Field | Meaning |
 | --- | --- |
 | `currency` | Explicit currency code, e.g. `CNY`; never guessed |

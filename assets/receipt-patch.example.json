@@ -1,0 +1,12 @@
+{
+  "records": [
+    {
+      "id": "E2",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "category": "玩具",
+      "paid": 12,
+      "source": "R6 合成逗猫棒小票"
+    }
+  ]
+}

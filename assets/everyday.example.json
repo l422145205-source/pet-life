@@ -1,0 +1,347 @@
+{
+  "currency": "CNY",
+  "pets": [
+    {
+      "id": "mochi",
+      "name": "年糕",
+      "species": "cat",
+      "routine": [
+        "在窗边小碗吃饭，不要换成另一只猫的碗。",
+        "用逗猫棒陪玩；是否需要追加活动由主人说明。"
+      ],
+      "care_source": "O1 主人日常说明"
+    },
+    {
+      "id": "bao",
+      "name": "包子",
+      "species": "cat",
+      "routine": [
+        "在书房吃饭，关门分开喂，防止抢年糕的食物。",
+        "吃完再开门，检查两个碗。"
+      ],
+      "care_source": "O1 主人日常说明"
+    }
+  ],
+  "products": [
+    {
+      "id": "dry",
+      "name": "云朵成猫干粮（虚构）",
+      "base_unit": "g",
+      "pack_size": 2000,
+      "pack_label": "袋",
+      "category": "口粮",
+      "calories": {
+        "kcal": 3800,
+        "per_quantity": 1,
+        "unit": "kg",
+        "source": "L1 包装热量行"
+      }
+    },
+    {
+      "id": "wet",
+      "name": "小海碗猫罐头（虚构）",
+      "base_unit": "g",
+      "pack_size": 85,
+      "pack_label": "罐",
+      "category": "口粮",
+      "calories": {
+        "kcal": 80,
+        "per_quantity": 1,
+        "unit": "pack",
+        "source": "L2 每罐热量行"
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "product_id": "dry",
+      "quantity": 500,
+      "unit": "g",
+      "as_of": "2026-10-01",
+      "source": "S1 10月1日晚盘点"
+    },
+    {
+      "product_id": "wet",
+      "quantity": 5,
+      "unit": "pack",
+      "as_of": "2026-10-01",
+      "source": "S1 10月1日晚盘点"
+    }
+  ],
+  "daily_plan": [
+    {
+      "pet_id": "mochi",
+      "product_id": "dry",
+      "quantity": 50,
+      "unit": "g",
+      "source": "O1 主人现有日用量"
+    },
+    {
+      "pet_id": "mochi",
+      "product_id": "wet",
+      "quantity": 0.5,
+      "unit": "pack",
+      "source": "O1 主人现有日用量"
+    },
+    {
+      "pet_id": "bao",
+      "product_id": "dry",
+      "quantity": 40,
+      "unit": "g",
+      "source": "O1 主人现有日用量"
+    },
+    {
+      "pet_id": "bao",
+      "product_id": "wet",
+      "quantity": 0.5,
+      "unit": "pack",
+      "source": "O1 主人现有日用量"
+    }
+  ],
+  "records": [
+    {
+      "id": "R1-1",
+      "kind": "purchase",
+      "date": "2026-10-02",
+      "product_id": "dry",
+      "quantity": 1,
+      "unit": "pack",
+      "paid": 116,
+      "source": "R1 干粮小票"
+    },
+    {
+      "id": "R2-1",
+      "kind": "purchase",
+      "date": "2026-10-02",
+      "product_id": "wet",
+      "quantity": 6,
+      "unit": "pack",
+      "paid": 48,
+      "source": "R2 罐头小票"
+    },
+    {
+      "id": "R2-1",
+      "kind": "purchase",
+      "date": "2026-10-02",
+      "product_id": "wet",
+      "quantity": 6,
+      "unit": "pack",
+      "paid": 48,
+      "source": "R2 罐头小票"
+    },
+    {
+      "id": "U1",
+      "kind": "use",
+      "date": "2026-10-02",
+      "product_id": "dry",
+      "quantity": 190,
+      "unit": "g",
+      "source": "O2 主人补记实际消耗"
+    },
+    {
+      "id": "U2",
+      "kind": "use",
+      "date": "2026-10-02",
+      "product_id": "wet",
+      "quantity": 4,
+      "unit": "pack",
+      "source": "O2 主人补记实际消耗"
+    },
+    {
+      "id": "E1",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "category": "洗护",
+      "paid": 45,
+      "source": "R3 洗护小票"
+    },
+    {
+      "id": "N1",
+      "kind": "note",
+      "date": "2026-10-03",
+      "pet_id": "mochi",
+      "text": "今天记录了15分钟逗猫棒互动。",
+      "source": "O3 生活记录"
+    },
+    {
+      "id": "R4-1",
+      "kind": "purchase",
+      "date": "2026-10-03",
+      "product_id": "wet",
+      "quantity": 2,
+      "unit": "pack",
+      "paid": null,
+      "confirmed": false,
+      "source": "R4 模糊截图，待确认"
+    },
+    {
+      "id": "R5-1",
+      "kind": "purchase",
+      "date": "2026-11-01",
+      "product_id": "dry",
+      "quantity": 1,
+      "unit": "pack",
+      "paid": 118,
+      "source": "R5 未来日期示例"
+    }
+  ],
+  "handoff": {
+    "feeding_times": "主人说明：每天08:00和20:00，两餐均分每日总量。",
+    "separation": "年糕在窗边、包子在书房；关门分开吃，吃完检查两个碗再开门。"
+  },
+  "example_notice": "SYNTHETIC ONLY: not a real household, veterinary case or product endorsement.",
+  "batch_inventory_complete": true,
+  "batches": [
+    {
+      "id": "dry-open",
+      "product_id": "dry",
+      "remaining": 310,
+      "unit": "g",
+      "counted_on": "2026-10-03",
+      "lot_code": "DEMO-D01",
+      "opened_on": "2026-10-01",
+      "best_before": "2026-10-31",
+      "owner_use_by": "2026-10-05",
+      "use_by_source": "B1 合成主人明确指定的复核日期，仅演示，不是通用保质期",
+      "storage_note": "按原包装说明保存；此演示不检验储存状态",
+      "source": "B1 合成包装与10月3日晚实盘"
+    },
+    {
+      "id": "dry-backup",
+      "product_id": "dry",
+      "remaining": 1,
+      "unit": "pack",
+      "counted_on": "2026-10-03",
+      "lot_code": "DEMO-D02",
+      "best_before": "2026-10-31",
+      "source": "B2 合成未开封包装与当晚实盘"
+    },
+    {
+      "id": "wet-near",
+      "product_id": "wet",
+      "remaining": 2,
+      "unit": "pack",
+      "counted_on": "2026-10-03",
+      "lot_code": "DEMO-W01",
+      "best_before": "2026-10-04",
+      "storage_note": "未开封；需主人核对包装与储存状态",
+      "source": "B3 合成罐身日期与当晚实盘"
+    },
+    {
+      "id": "wet-backup",
+      "product_id": "wet",
+      "remaining": 5,
+      "unit": "pack",
+      "counted_on": "2026-10-03",
+      "lot_code": "DEMO-W02",
+      "best_before": "2026-10-31",
+      "source": "B4 合成罐身日期与当晚实盘"
+    }
+  ],
+  "care_tasks": [
+    {
+      "id": "mochi-am",
+      "pet_id": "mochi",
+      "title": "分开喂食并检查食盆",
+      "time": "08:00",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分"
+    },
+    {
+      "id": "mochi-pm",
+      "pet_id": "mochi",
+      "title": "分开喂食并检查食盆",
+      "time": "20:00",
+      "instructions": "本餐干粮25g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分"
+    },
+    {
+      "id": "bao-am",
+      "pet_id": "bao",
+      "title": "分开喂食并检查食盆",
+      "time": "08:00",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分"
+    },
+    {
+      "id": "bao-pm",
+      "pet_id": "bao",
+      "title": "分开喂食并检查食盆",
+      "time": "20:00",
+      "instructions": "本餐干粮20g、湿粮1/4罐；按O1分房喂，检查食盆后记录；不因未打卡就重复加餐。",
+      "source": "O1 合成主人现有安排，两餐均分"
+    }
+  ],
+  "completions": [
+    {
+      "id": "C1",
+      "task_id": "mochi-am",
+      "date": "2026-10-03",
+      "status": "done",
+      "actor": "照顾者A",
+      "source": "C1 合成照顾留言"
+    },
+    {
+      "id": "C2",
+      "task_id": "bao-am",
+      "date": "2026-10-03",
+      "status": "done",
+      "actor": "照顾者A",
+      "source": "C2 合成照顾留言"
+    },
+    {
+      "id": "C3",
+      "task_id": "mochi-pm",
+      "date": "2026-10-03",
+      "status": "done",
+      "actor": "照顾者A",
+      "source": "C3 合成照顾留言"
+    },
+    {
+      "id": "C4",
+      "task_id": "mochi-pm",
+      "date": "2026-10-03",
+      "status": "skipped",
+      "actor": "照顾者B",
+      "source": "C4 合成冲突留言，待核对"
+    }
+  ],
+  "observations": [
+    {
+      "id": "V1",
+      "pet_id": "mochi",
+      "observed_on": "2026-10-01",
+      "category": "食欲",
+      "text": "主人记录：晚餐后食盆约剩四分之一，没有称重。",
+      "source": "V1 合成观察笔记"
+    },
+    {
+      "id": "V2",
+      "pet_id": "mochi",
+      "observed_on": "2026-10-03",
+      "category": "食欲",
+      "text": "主人记录：今晚再次见到剩粮，具体克数未知；10月2日没有观察记录。",
+      "source": "V2 合成观察笔记"
+    },
+    {
+      "id": "V3",
+      "pet_id": "bao",
+      "observed_on": "2026-10-03",
+      "category": "体重",
+      "value": 4.3,
+      "unit": "kg",
+      "text": "主人用家用秤记录4.3kg，测量条件未说明。",
+      "source": "V3 合成称重记录"
+    },
+    {
+      "id": "V4",
+      "pet_id": "mochi",
+      "observed_on": "2026-10-03",
+      "category": "饮水",
+      "text": "转述“好像喝水更多”，未量化，待主人确认。",
+      "confirmed": false,
+      "source": "V4 合成转述"
+    }
+  ],
+  "current_therapies": []
+}

@@ -1,0 +1,16 @@
+{
+  "example_notice": "SYNTHETIC ONLY: fictional dog, caregiver and owner instructions; not general exercise advice.",
+  "currency": "CNY",
+  "pets": [{"id":"dou","name":"豆豆","species":"dog","routine":["出门按主人提供的牵引安排执行。"],"care_source":"D1 合成主人说明"}],
+  "products": [],
+  "daily_plan": [],
+  "records": [],
+  "care_tasks": [
+    {"id":"walk-am","pet_id":"dou","title":"早间散步与拾便","time":"07:30","instructions":"主人原有安排：沿熟悉路线短走，牵引不离手；返回后检查并擦净爪子。具体时长由主人另行明确，不据此制定运动量。","source":"D1 合成主人原有安排"},
+    {"id":"water-pm","pet_id":"dou","title":"晚间换水与收牵引","time":"20:30","instructions":"主人原有安排：换清水，把牵引放回玄关；记录实际做了什么，有不确定先联系主人。","source":"D1 合成主人原有安排"}
+  ],
+  "completions": [
+    {"id":"D-C1","task_id":"walk-am","date":"2026-10-03","status":"done","actor":"照顾者A","source":"D2 合成照顾留言"},
+    {"id":"D-C2","task_id":"water-pm","date":"2026-10-03","status":"needs_help","actor":"照顾者B","source":"D3 合成照顾留言，主人需接续处理"}
+  ]
+}

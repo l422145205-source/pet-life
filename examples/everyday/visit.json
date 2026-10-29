@@ -1,0 +1,138 @@
+{
+  "as_of": "2026-10-03",
+  "start": "2026-09-20",
+  "pets": [
+    {
+      "id": "mochi",
+      "name": "年糕",
+      "species": "cat",
+      "routine": [
+        "在窗边小碗吃饭，不要换成另一只猫的碗。",
+        "用逗猫棒陪玩；是否需要追加活动由主人说明。"
+      ],
+      "care_source": "O1 主人日常说明"
+    },
+    {
+      "id": "bao",
+      "name": "包子",
+      "species": "cat",
+      "routine": [
+        "在书房吃饭，关门分开喂，防止抢年糕的食物。",
+        "吃完再开门，检查两个碗。"
+      ],
+      "care_source": "O1 主人日常说明"
+    }
+  ],
+  "observations": [
+    {
+      "id": "V1",
+      "pet_id": "mochi",
+      "observed_on": "2026-10-01",
+      "category": "食欲",
+      "text": "主人记录：晚餐后食盆约剩四分之一，没有称重。",
+      "source": "V1 合成观察笔记",
+      "pet": "年糕"
+    },
+    {
+      "id": "V2",
+      "pet_id": "mochi",
+      "observed_on": "2026-10-03",
+      "category": "食欲",
+      "text": "主人记录：今晚再次见到剩粮，具体克数未知；10月2日没有观察记录。",
+      "source": "V2 合成观察笔记",
+      "pet": "年糕"
+    },
+    {
+      "id": "V3",
+      "pet_id": "bao",
+      "observed_on": "2026-10-03",
+      "category": "体重",
+      "value": 4.3,
+      "unit": "kg",
+      "text": "主人用家用秤记录4.3kg，测量条件未说明。",
+      "source": "V3 合成称重记录",
+      "pet": "包子"
+    }
+  ],
+  "pending": [
+    {
+      "id": "V4",
+      "pet_id": "mochi",
+      "observed_on": "2026-10-03",
+      "category": "饮水",
+      "text": "转述“好像喝水更多”，未量化，待主人确认。",
+      "confirmed": false,
+      "source": "V4 合成转述",
+      "pet": "年糕"
+    }
+  ],
+  "future_excluded": [],
+  "current_therapies": [],
+  "daily_plan": [
+    {
+      "pet_id": "mochi",
+      "pet": "年糕",
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "daily_quantity": "50",
+      "unit": "g",
+      "trip_quantity": "50",
+      "display_daily_quantity": "50",
+      "display_unit": "g",
+      "daily_cost": "2.900",
+      "plan_kcal": "190.0",
+      "source": "O1 主人现有日用量",
+      "price_source": "R1 干粮小票"
+    },
+    {
+      "pet_id": "mochi",
+      "pet": "年糕",
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "daily_quantity": "42.5",
+      "unit": "g",
+      "trip_quantity": "42.5",
+      "display_daily_quantity": "0.5",
+      "display_unit": "罐",
+      "daily_cost": "4.000000000000000000000000000",
+      "plan_kcal": "40.00000000000000000000000000",
+      "source": "O1 主人现有日用量",
+      "price_source": "R2 罐头小票"
+    },
+    {
+      "pet_id": "bao",
+      "pet": "包子",
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "daily_quantity": "40",
+      "unit": "g",
+      "trip_quantity": "40",
+      "display_daily_quantity": "40",
+      "display_unit": "g",
+      "daily_cost": "2.320",
+      "plan_kcal": "152.0",
+      "source": "O1 主人现有日用量",
+      "price_source": "R1 干粮小票"
+    },
+    {
+      "pet_id": "bao",
+      "pet": "包子",
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "daily_quantity": "42.5",
+      "unit": "g",
+      "trip_quantity": "42.5",
+      "display_daily_quantity": "0.5",
+      "display_unit": "罐",
+      "daily_cost": "4.000000000000000000000000000",
+      "plan_kcal": "40.00000000000000000000000000",
+      "source": "O1 主人现有日用量",
+      "price_source": "R2 罐头小票"
+    }
+  ],
+  "handoff": {
+    "feeding_times": "主人说明：每天08:00和20:00，两餐均分每日总量。",
+    "separation": "年糕在窗边、包子在书房；关门分开吃，吃完检查两个碗再开门。"
+  },
+  "basis": "Owner-reported observations only. Gaps do not establish symptom duration or absence. No diagnosis, dose recommendation or health score."
+}

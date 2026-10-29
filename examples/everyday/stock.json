@@ -1,0 +1,186 @@
+{
+  "as_of": "2026-10-03",
+  "days": 7,
+  "batches": [
+    {
+      "id": "dry-open",
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "lot_code": "DEMO-D01",
+      "remaining": "310",
+      "unit": "g",
+      "counted_on": "2026-10-03",
+      "opened_on": "2026-10-01",
+      "deadline": "2026-10-05",
+      "storage_note": "按原包装说明保存；此演示不检验储存状态",
+      "source": "B1 合成包装与10月3日晚实盘",
+      "use_by_source": "B1 合成主人明确指定的复核日期，仅演示，不是通用保质期",
+      "eligible_for_plan": true,
+      "review": []
+    },
+    {
+      "id": "dry-backup",
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "lot_code": "DEMO-D02",
+      "remaining": "2000",
+      "unit": "g",
+      "counted_on": "2026-10-03",
+      "opened_on": null,
+      "deadline": "2026-10-31",
+      "storage_note": null,
+      "source": "B2 合成未开封包装与当晚实盘",
+      "use_by_source": null,
+      "eligible_for_plan": true,
+      "review": []
+    },
+    {
+      "id": "wet-near",
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "lot_code": "DEMO-W01",
+      "remaining": "170",
+      "unit": "g",
+      "counted_on": "2026-10-03",
+      "opened_on": null,
+      "deadline": "2026-10-04",
+      "storage_note": "未开封；需主人核对包装与储存状态",
+      "source": "B3 合成罐身日期与当晚实盘",
+      "use_by_source": null,
+      "eligible_for_plan": true,
+      "review": []
+    },
+    {
+      "id": "wet-backup",
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "lot_code": "DEMO-W02",
+      "remaining": "425",
+      "unit": "g",
+      "counted_on": "2026-10-03",
+      "opened_on": null,
+      "deadline": "2026-10-31",
+      "storage_note": null,
+      "source": "B4 合成罐身日期与当晚实盘",
+      "use_by_source": null,
+      "eligible_for_plan": true,
+      "review": []
+    }
+  ],
+  "products": [
+    {
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "unit": "g",
+      "daily_total": "90",
+      "complete_confirmed_basis": true,
+      "first_shortfall": null,
+      "shortfall": "0",
+      "pack_equivalent": "0",
+      "pack_label": "袋",
+      "allocations": [
+        {
+          "date": "2026-10-04",
+          "batch_id": "dry-open",
+          "quantity": "90"
+        },
+        {
+          "date": "2026-10-05",
+          "batch_id": "dry-open",
+          "quantity": "90"
+        },
+        {
+          "date": "2026-10-06",
+          "batch_id": "dry-backup",
+          "quantity": "90"
+        },
+        {
+          "date": "2026-10-07",
+          "batch_id": "dry-backup",
+          "quantity": "90"
+        },
+        {
+          "date": "2026-10-08",
+          "batch_id": "dry-backup",
+          "quantity": "90"
+        },
+        {
+          "date": "2026-10-09",
+          "batch_id": "dry-backup",
+          "quantity": "90"
+        },
+        {
+          "date": "2026-10-10",
+          "batch_id": "dry-backup",
+          "quantity": "90"
+        }
+      ],
+      "remaining_at_end": {
+        "dry-open": "130",
+        "dry-backup": "1550"
+      },
+      "deadline_surplus": [
+        {
+          "batch_id": "dry-open",
+          "quantity": "130",
+          "deadline": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "unit": "g",
+      "daily_total": "85.0",
+      "complete_confirmed_basis": true,
+      "first_shortfall": "2026-10-10",
+      "shortfall": "85.0",
+      "pack_equivalent": "1",
+      "pack_label": "罐",
+      "allocations": [
+        {
+          "date": "2026-10-04",
+          "batch_id": "wet-near",
+          "quantity": "85.0"
+        },
+        {
+          "date": "2026-10-05",
+          "batch_id": "wet-backup",
+          "quantity": "85.0"
+        },
+        {
+          "date": "2026-10-06",
+          "batch_id": "wet-backup",
+          "quantity": "85.0"
+        },
+        {
+          "date": "2026-10-07",
+          "batch_id": "wet-backup",
+          "quantity": "85.0"
+        },
+        {
+          "date": "2026-10-08",
+          "batch_id": "wet-backup",
+          "quantity": "85.0"
+        },
+        {
+          "date": "2026-10-09",
+          "batch_id": "wet-backup",
+          "quantity": "85.0"
+        }
+      ],
+      "remaining_at_end": {
+        "wet-near": "85.0",
+        "wet-backup": "0.0"
+      },
+      "deadline_surplus": [
+        {
+          "batch_id": "wet-near",
+          "quantity": "85.0",
+          "deadline": "2026-10-04"
+        }
+      ]
+    }
+  ],
+  "basis": "Separate dated physical counts, not added to book inventory. Date-level planning only; no safety, recall, diet-suitability or actual-consumption verification."
+}

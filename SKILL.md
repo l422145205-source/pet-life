@@ -1,6 +1,6 @@
 ---
 name: pet-life
-description: Manage real cats' and dogs' everyday care from food labels, receipts, supply counts and owner notes. Use for pet supply forecasts, feeding-cost comparisons, multi-pet care records, sitter handoffs and monthly pet-life summaries. This is a practical Agent Skill for real animals, not a virtual pet or game.
+description: Organize real cats' and dogs' care from food labels, receipts and owner notes. Use for supply and batch-date planning, multi-caregiver handoffs and check-ins, vet-visit observation briefs, feeding costs and repeatable local pet records. This is a real-pet Agent Skill, not a virtual pet or game.
 ---
 
 # PetLife — 铲屎官生活管家
@@ -12,7 +12,12 @@ Turn the owner's scattered pet records into a short, useful answer and an editab
 - **“粮还够几天 / 这罐到底多贵？”** Extract package size, paid price, calorie units and stock. Compare price per package/base unit; compare price per 100 kcal only when the label supplies calories. Calculate stock coverage using the owner's existing daily quantities.
 - **“出门几天，帮我交接”** Compile a pet-by-pet sitter card from the owner's routine. Keep feeding location, quantities, times, separation needs, handling quirks and contact instructions distinct. List unresolved essentials prominently; do not invent them.
 - **“这个月主子花了多少钱？”** Reconcile receipts once, separate recorded cash spending from projected daily feeding cost, and summarize user-recorded activities. A playful pet-POV headline is welcome; the facts and numbers remain literal.
-- **“记一下今天买了/用了……”** Update the chosen local record, preserve stable event IDs, then refresh the requested summary. A repeated receipt must not become another purchase.
+- **“哪批粮先用 / 开封了多久？”** Preserve batch IDs, opening notes and supplied label dates. Simulate the owner's existing daily amount within each product; show near-date surplus and incomplete counts. No universal post-opening shelf life or safety guarantee.
+- **“家里两个人，谁喂过了？”** Separate per-pet/time plans from caregiver reports. Missing logs, conflicting reports and multiple “done” reports need clarification; do not infer missed care or trigger repeat feeding.
+- **“看诊前，帮我整理一下”** Produce a sourced observation timeline, current supplied food/therapy information and missing facts. Unconfirmed reports remain separate; no invented continuous symptom duration, diagnosis or dose.
+- **“记一下今天买了/用了……”** Use the append-merge helper for the chosen local record. Same ID/content is a no-op; conflicts and stale files fail without overwrite. Preserve source-event IDs across sessions.
+
+For batch dates, check-ins, visit briefs or persistent updates, read [references/everyday-workflows.md](references/everyday-workflows.md) and use `scripts/carekit.py`. Load only the task-relevant fields. A partial report with explicit gaps is useful; do not force the owner to complete every schema field first.
 
 Read only relevant user-supplied files or an existing `.pet-life/household.json` in the selected workspace. For a new household, use [references/record-format.md](references/record-format.md) and the synthetic [assets/household.example.json](assets/household.example.json) as structure, never as the user's facts. Keep owner contact details, addresses, chip numbers and raw photos out of the normalized record unless the particular task needs them.
 
@@ -40,9 +45,11 @@ Normalize the necessary facts to JSON. Read [references/record-format.md](refere
 python <skill-dir>/scripts/petlife.py build --input <household.json> --as-of YYYY-MM-DD --out <output-folder>
 ```
 
-Optional: `--start YYYY-MM-DD` for a spending period; `--trip-days 3` for supply packing quantities. The helper writes `brief.md`, `care-card.md` and `report.json`. It does not alter the input ledger, run network calls or contact anyone. For record updates, the Agent edits the owner's chosen local JSON first; previews do not require persistence.
+Optional: `--start YYYY-MM-DD` for a spending period; `--trip-days 3` for supply packing quantities. The helper writes `brief.md`, `care-card.md` and `report.json`. It does not alter the input ledger, run network calls or contact anyone. `carekit.py` adds `stock`, `care`, `visit` reports and an explicit local `merge --write` mode; inspect the current file hash before updating. A user request to keep a local record authorizes that update; sending or uploading it remains separate.
 
 Inventory is a **book balance** from a dated stock count plus later recorded movements. It is not a physical sensor. Missing consumption logs can make it too high. Coverage assumes the supplied daily routine continues; no daily amount means no coverage claim. Explain this briefly when it affects the answer.
+
+Batch planning uses separate same-day physical counts. Never add batch quantities to the book balance again. Do not treat a caregiver's “done” check-in as proof of ingestion or as an automatic stock movement. Local records provide continuity only when the next session can access them; the Skill does not run in the background or sync across devices.
 
 ## Make the answer useful
 

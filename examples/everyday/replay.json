@@ -1,0 +1,13 @@
+{
+  "example": "SYNTHETIC; actual helper execution, not an Agent benchmark",
+  "before": "209",
+  "after_first_merge": "221",
+  "after_replay": "221",
+  "first_added": {
+    "records": 1
+  },
+  "replay_added": {
+    "records": 0
+  },
+  "replay_bytes_unchanged": true
+}

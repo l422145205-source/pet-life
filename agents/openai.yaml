@@ -1,4 +1,4 @@
 interface:
   display_name: "PetLife"
-  short_description: "Turn real pet receipts and routines into useful care briefs"
-  default_prompt: "Use $pet-life to organize my pets' records, check supplies, and prepare a sitter handoff."
+  short_description: "Track real pet supplies, shared care, and vet-visit notes"
+  default_prompt: "Use $pet-life to organize my pets' local records, review food batches and shared care, and prepare the brief I need."
