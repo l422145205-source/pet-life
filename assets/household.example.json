@@ -1,0 +1,36 @@
+{
+  "currency": "CNY",
+  "pets": [
+    {"id":"mochi","name":"年糕","species":"cat","routine":["在窗边小碗吃饭，不要换成另一只猫的碗。","用逗猫棒陪玩；是否需要追加活动由主人说明。"],"care_source":"O1 主人日常说明"},
+    {"id":"bao","name":"包子","species":"cat","routine":["在书房吃饭，关门分开喂，防止抢年糕的食物。","吃完再开门，检查两个碗。"],"care_source":"O1 主人日常说明"}
+  ],
+  "products": [
+    {"id":"dry","name":"云朵成猫干粮（虚构）","base_unit":"g","pack_size":2000,"pack_label":"袋","category":"口粮","calories":{"kcal":3800,"per_quantity":1,"unit":"kg","source":"L1 包装热量行"}},
+    {"id":"wet","name":"小海碗猫罐头（虚构）","base_unit":"g","pack_size":85,"pack_label":"罐","category":"口粮","calories":{"kcal":80,"per_quantity":1,"unit":"pack","source":"L2 每罐热量行"}}
+  ],
+  "inventory": [
+    {"product_id":"dry","quantity":500,"unit":"g","as_of":"2026-10-01","source":"S1 10月1日晚盘点"},
+    {"product_id":"wet","quantity":5,"unit":"pack","as_of":"2026-10-01","source":"S1 10月1日晚盘点"}
+  ],
+  "daily_plan": [
+    {"pet_id":"mochi","product_id":"dry","quantity":50,"unit":"g","source":"O1 主人现有日用量"},
+    {"pet_id":"mochi","product_id":"wet","quantity":0.5,"unit":"pack","source":"O1 主人现有日用量"},
+    {"pet_id":"bao","product_id":"dry","quantity":40,"unit":"g","source":"O1 主人现有日用量"},
+    {"pet_id":"bao","product_id":"wet","quantity":0.5,"unit":"pack","source":"O1 主人现有日用量"}
+  ],
+  "records": [
+    {"id":"R1-1","kind":"purchase","date":"2026-10-02","product_id":"dry","quantity":1,"unit":"pack","paid":116,"source":"R1 干粮小票"},
+    {"id":"R2-1","kind":"purchase","date":"2026-10-02","product_id":"wet","quantity":6,"unit":"pack","paid":48,"source":"R2 罐头小票"},
+    {"id":"R2-1","kind":"purchase","date":"2026-10-02","product_id":"wet","quantity":6,"unit":"pack","paid":48,"source":"R2 罐头小票"},
+    {"id":"U1","kind":"use","date":"2026-10-02","product_id":"dry","quantity":190,"unit":"g","source":"O2 主人补记实际消耗"},
+    {"id":"U2","kind":"use","date":"2026-10-02","product_id":"wet","quantity":4,"unit":"pack","source":"O2 主人补记实际消耗"},
+    {"id":"E1","kind":"expense","date":"2026-10-03","category":"洗护","paid":45,"source":"R3 洗护小票"},
+    {"id":"N1","kind":"note","date":"2026-10-03","pet_id":"mochi","text":"今天记录了15分钟逗猫棒互动。","source":"O3 生活记录"},
+    {"id":"R4-1","kind":"purchase","date":"2026-10-03","product_id":"wet","quantity":2,"unit":"pack","paid":null,"confirmed":false,"source":"R4 模糊截图，待确认"},
+    {"id":"R5-1","kind":"purchase","date":"2026-11-01","product_id":"dry","quantity":1,"unit":"pack","paid":118,"source":"R5 未来日期示例"}
+  ],
+  "handoff": {
+    "feeding_times":"主人说明：每天08:00和20:00，两餐均分每日总量。",
+    "separation":"年糕在窗边、包子在书房；关门分开吃，吃完检查两个碗再开门。"
+  }
+}

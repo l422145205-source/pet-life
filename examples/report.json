@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-03",
+  "period_start": "2026-10-01",
+  "currency": "CNY",
+  "supplies": [
+    {
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "unit": "g",
+      "book_stock": "2310",
+      "last_stock_count": "2026-10-01",
+      "sources": [
+        "S1 10月1日晚盘点",
+        "R1 干粮小票",
+        "O2 主人补记实际消耗"
+      ],
+      "daily_total": "90",
+      "days_covered": "25.66666666666666666666666667",
+      "latest_price": {
+        "per_base_unit": "0.058",
+        "date": "2026-10-02",
+        "source": "R1 干粮小票"
+      },
+      "calorie_source": "L1 包装热量行",
+      "cost_per_100kcal": "1.526315789473684210526315789"
+    },
+    {
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "unit": "g",
+      "book_stock": "595",
+      "last_stock_count": "2026-10-01",
+      "sources": [
+        "S1 10月1日晚盘点",
+        "R2 罐头小票",
+        "O2 主人补记实际消耗"
+      ],
+      "daily_total": "85.0",
+      "days_covered": "7",
+      "latest_price": {
+        "per_base_unit": "0.09411764705882352941176470588",
+        "date": "2026-10-02",
+        "source": "R2 罐头小票"
+      },
+      "calorie_source": "L2 每罐热量行",
+      "cost_per_100kcal": "1E+1"
+    }
+  ],
+  "daily_plan": [
+    {
+      "pet_id": "mochi",
+      "pet": "年糕",
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "daily_quantity": "50",
+      "unit": "g",
+      "trip_quantity": "150",
+      "display_daily_quantity": "50",
+      "display_unit": "g",
+      "daily_cost": "2.900",
+      "plan_kcal": "190.0",
+      "source": "O1 主人现有日用量",
+      "price_source": "R1 干粮小票"
+    },
+    {
+      "pet_id": "mochi",
+      "pet": "年糕",
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "daily_quantity": "42.5",
+      "unit": "g",
+      "trip_quantity": "127.5",
+      "display_daily_quantity": "0.5",
+      "display_unit": "罐",
+      "daily_cost": "4.000000000000000000000000000",
+      "plan_kcal": "40.00000000000000000000000000",
+      "source": "O1 主人现有日用量",
+      "price_source": "R2 罐头小票"
+    },
+    {
+      "pet_id": "bao",
+      "pet": "包子",
+      "product_id": "dry",
+      "product": "云朵成猫干粮（虚构）",
+      "daily_quantity": "40",
+      "unit": "g",
+      "trip_quantity": "120",
+      "display_daily_quantity": "40",
+      "display_unit": "g",
+      "daily_cost": "2.320",
+      "plan_kcal": "152.0",
+      "source": "O1 主人现有日用量",
+      "price_source": "R1 干粮小票"
+    },
+    {
+      "pet_id": "bao",
+      "pet": "包子",
+      "product_id": "wet",
+      "product": "小海碗猫罐头（虚构）",
+      "daily_quantity": "42.5",
+      "unit": "g",
+      "trip_quantity": "127.5",
+      "display_daily_quantity": "0.5",
+      "display_unit": "罐",
+      "daily_cost": "4.000000000000000000000000000",
+      "plan_kcal": "40.00000000000000000000000000",
+      "source": "O1 主人现有日用量",
+      "price_source": "R2 罐头小票"
+    }
+  ],
+  "trip_days": 3,
+  "spending": {
+    "口粮": "164",
+    "洗护": "45"
+  },
+  "recorded_spending": "209",
+  "spending_complete": false,
+  "priced_daily_subtotal": "13.22000000000000000000000000",
+  "daily_cost_complete": true,
+  "pets": [
+    {
+      "id": "mochi",
+      "name": "年糕",
+      "species": "cat",
+      "routine": [
+        "在窗边小碗吃饭，不要换成另一只猫的碗。",
+        "用逗猫棒陪玩；是否需要追加活动由主人说明。"
+      ],
+      "care_source": "O1 主人日常说明"
+    },
+    {
+      "id": "bao",
+      "name": "包子",
+      "species": "cat",
+      "routine": [
+        "在书房吃饭，关门分开喂，防止抢年糕的食物。",
+        "吃完再开门，检查两个碗。"
+      ],
+      "care_source": "O1 主人日常说明"
+    }
+  ],
+  "notes": [
+    {
+      "date": "2026-10-03",
+      "pet": "年糕",
+      "text": "今天记录了15分钟逗猫棒互动。",
+      "source": "O3 生活记录"
+    }
+  ],
+  "handoff": {
+    "feeding_times": "主人说明：每天08:00和20:00，两餐均分每日总量。",
+    "separation": "年糕在窗边、包子在书房；关门分开吃，吃完检查两个碗再开门。"
+  },
+  "handoff_gaps": [
+    "emergency_plan"
+  ],
+  "handoff_status": "draft",
+  "duplicates_ignored": [
+    "R2-1"
+  ],
+  "unconfirmed_excluded": [
+    "R4-1"
+  ],
+  "future_excluded": [
+    "R5-1"
+  ],
+  "warnings": [
+    "以下记录尚未确认，未计入库存和支出：R4-1"
+  ],
+  "basis": "Book stock only; recorded cash spending differs from projected daily cost. Daily quantities are owner-supplied, not new feeding advice."
+}
